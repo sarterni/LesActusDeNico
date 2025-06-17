@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Puppeteer Chromium downloads
+.chromium/
+
+# Puppeteer cache
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.local
+
+# OS
