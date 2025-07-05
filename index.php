@@ -131,18 +131,27 @@
     <h1 class="main-title">Mes derniers posts <span id="Linked">Linked</span><span id="In">In</span></h1>
     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
         <!-- LinkedIn post embed 1 -->
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7331737042046894080?collapsed=1"
-            height="700" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-        <!-- Ajoutez d'autres iframes pour plus de posts -->
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7331344865957470209?collapsed=1"
+       
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
+            $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            echo isset($lines[0]) ? trim($lines[0]) : '';
+        ?>?collapsed=1"
             height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
+        
         <!-- LinkedIn post embed 2 -->
-
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7332651855929389056?collapsed=1"
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
+            $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            echo isset($lines[1]) ? trim($lines[1]) : '';
+          ?>?collapsed=1"
             height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-
-
-    </div>
+    
+        <!-- LinkedIn post embed 3 -->
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
+            $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            echo isset($lines[2]) ? trim($lines[2]) : '';
+        ?>?collapsed=1"
+            height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
+        </div>
     <p style="text-align:center; margin-top: 10px;">
         <a href="https://www.linkedin.com/in/nsarter/" target="_blank" rel="noopener">Voir tous mes posts sur
             LinkedIn</a>
