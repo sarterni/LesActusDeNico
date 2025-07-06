@@ -131,40 +131,26 @@
     <h1 class="main-title">Mes derniers posts <span id="Linked">Linked</span><span id="In">In</span></h1>
     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
         <!-- LinkedIn post embed 1 -->
-<<<<<<< HEAD
-        <!-- Récupération automatique des derniers posts LinkedIn n'est pas possible via une API publique à cause des restrictions LinkedIn. 
-        Vous devez intégrer manuellement les iframes des posts LinkedIn comme ci-dessous. 
-        Pour automatiser, il faudrait utiliser un service tiers ou un script serveur qui scrappe votre profil (ce qui viole les conditions LinkedIn). 
-        Voici la méthode manuelle recommandée : -->
-
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7331737042046894080?collapsed=1"
-            height="700" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7331344865957470209?collapsed=1"
-            height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7332651855929389056?collapsed=1"
-            height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-=======
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
             $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             echo isset($lines[0]) ? trim($lines[0]) : '';
         ?>?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"
-        style="margin-bottom: 20px;"></iframe>
+            style="margin-bottom: 20px;"></iframe>
 
         <!-- LinkedIn post embed 2 -->
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
             $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             echo isset($lines[1]) ? trim($lines[1]) : '';
           ?>?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"
-          style="margin-bottom: 20px;"></iframe>
+            style="margin-bottom: 20px;"></iframe>
 
         <!-- LinkedIn post embed 3 -->
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
             $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             echo isset($lines[2]) ? trim($lines[2]) : '';
         ?>?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"
-        style="margin-bottom: 20px;"></iframe>
+            style="margin-bottom: 20px;"></iframe>
     </div>
->>>>>>> scrapping-linkedin
     <p style="text-align:center; margin-top: 10px;">
         <a href="https://www.linkedin.com/in/nsarter/" target="_blank" rel="noopener">Voir tous mes posts sur
             LinkedIn</a>
@@ -172,10 +158,10 @@
     </section>
 
     <section id="instagram-posts" class="sec-faq">
-    <h1 class="main-title">Mes derniers posts <span style="color:#E1306C;">Instagram</span></h1>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        
-        <?php
+        <h1 class="main-title">Mes derniers posts <span style="color:#E1306C;">Instagram</span></h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+            <?php
         $insta_lines = file('embed_instagram.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         for ($i = 0; $i < 3; $i++) {
             if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
@@ -185,16 +171,17 @@ echo '<blockquote class="instagram-media" data-instgrm-permalink="https://www.in
             }
         }
         ?>
-        
-    </div>
-    
-    <!-- Script Instagram officiel -->
-    <script async src="//www.instagram.com/embed.js"></script>
-    
-    <p style="text-align:center; margin-top: 10px;">
-        <a href="https://www.instagram.com/lesactusdenico/" target="_blank" rel="noopener">Voir tous mes posts sur Instagram</a>
-    </p>
-</section>
+
+        </div>
+
+        <!-- Script Instagram officiel -->
+        <script async src="//www.instagram.com/embed.js"></script>
+
+        <p style="text-align:center; margin-top: 10px;">
+            <a href="https://www.instagram.com/lesactusdenico/" target="_blank" rel="noopener">Voir tous mes posts sur
+                Instagram</a>
+        </p>
+    </section>
 
 
     <section id="projets-section">
