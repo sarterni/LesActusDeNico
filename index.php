@@ -150,6 +150,14 @@
             echo isset($lines[2]) ? trim($lines[2]) : '';
         ?>?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"
             style="margin-bottom: 20px;"></iframe>
+
+
+        <!-- LinkedIn post embed 4 -->
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:<?php
+            $lines = file('embed_linkedin.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            echo isset($lines[3]) ? trim($lines[3]) : '';
+        ?>?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="Post intégré"
+            style="margin-bottom: 20px;"></iframe>
     </div>
     <p style="text-align:center; margin-top: 10px;">
         <a href="https://www.linkedin.com/in/nsarter/" target="_blank" rel="noopener">Voir tous mes posts sur
@@ -178,74 +186,74 @@
         </div>
     </section>
 
-        <!-- Script Instagram officiel -->
-        <p style="text-align:center; margin-top: 10px;">
-            <a href="https://www.instagram.com/lesactusdenico/" target="_blank" rel="noopener">Voir tous mes posts sur
-                Instagram</a>
-            </p>
-        </section>
-        
-        
-        <section id="projets-section">
-            
-            <h1 class="main-title">Mes travaux dans le domaine de l'IC</h1>
-            
-            <div class="btn-grid" id="projets">
-                <a href="" style="text-decoration: none">
-                    <button class="">On Vous En Parle</button>
-                </a>
-            </div>
-        </section>
-        
-        
-        
-        <h1 class="main-title">J'apporte mon soutien à : </h1>
-        <div class="handijojoText-div">
-            <p id="handijojo-text">HandiJojo</p>
-            <p>
-                Depuis un grave accident, je suis lourdement handicapé. Je vis en
-                Moselle. Je retrouve le goût à la vie grâce à de nombreuses activités
-                que je souhaite vous faire découvrir
-            </p>
+    <!-- Script Instagram officiel -->
+    <p style="text-align:center; margin-top: 10px;">
+        <a href="https://www.instagram.com/lesactusdenico/" target="_blank" rel="noopener">Voir tous mes posts sur
+            Instagram</a>
+    </p>
+    </section>
+
+
+    <section id="projets-section">
+
+        <h1 class="main-title">Mes travaux dans le domaine de l'IC</h1>
+
+        <div class="btn-grid" id="projets">
+            <a href="" style="text-decoration: none">
+                <button class="">On Vous En Parle</button>
+            </a>
         </div>
-        
-        <div class="btn-grid" id="parterners">
-            <a href="https://www.youtube.com/channel/UC-GiuOvF_TdfICy2JzCfliw" style="text-decoration: none">
-                <button id="handijojo-youtube" class="handijojo-youtube-button">
-                    <img id="handijojo-logo-youtube" class="company-logo" src="./img/youtube_logo.jpeg"
+    </section>
+
+
+
+    <h1 class="main-title">J'apporte mon soutien à : </h1>
+    <div class="handijojoText-div">
+        <p id="handijojo-text">HandiJojo</p>
+        <p>
+            Depuis un grave accident, je suis lourdement handicapé. Je vis en
+            Moselle. Je retrouve le goût à la vie grâce à de nombreuses activités
+            que je souhaite vous faire découvrir
+        </p>
+    </div>
+
+    <div class="btn-grid" id="parterners">
+        <a href="https://www.youtube.com/channel/UC-GiuOvF_TdfICy2JzCfliw" style="text-decoration: none">
+            <button id="handijojo-youtube" class="handijojo-youtube-button">
+                <img id="handijojo-logo-youtube" class="company-logo" src="./img/youtube_logo.jpeg"
                     alt="HandiJojo Logo" />
-                    <span id="span-handijojo-youtube" class="donate-span">Clique Ici pour découvrir la chaine</span>
-                </button>
-            </a>
-            
-            <a href="https://www.instagram.com/handi.jojo?utm_source=qr" style="text-decoration: none">
-                <button id="handijojo-instagram" class="handijojo-instagram-button">
-                    <img id="handijojo-logo-instagram" class="company-logo" src="./img/Instagram_icon.png"
+                <span id="span-handijojo-youtube" class="donate-span">Clique Ici pour découvrir la chaine</span>
+            </button>
+        </a>
+
+        <a href="https://www.instagram.com/handi.jojo?utm_source=qr" style="text-decoration: none">
+            <button id="handijojo-instagram" class="handijojo-instagram-button">
+                <img id="handijojo-logo-instagram" class="company-logo" src="./img/Instagram_icon.png"
                     alt="HandiJojo Logo" />
-                    <span id="span-handijojo-instagram" class="donate-span">Clique Ici pour découvrir le site</span>
-                </button>
-            </a>
-            
-            <a href="https://www.tiktok.com/@handijojo?lang=fr" style="text-decoration: none">
-                <button id="handijojo-tiktok" class="handijojo-tiktok-button">
-                    <img id="handijojo-logo-tiktok" class="company-logo" src="./img/tiktok-icon-free-png.webp"
+                <span id="span-handijojo-instagram" class="donate-span">Clique Ici pour découvrir le site</span>
+            </button>
+        </a>
+
+        <a href="https://www.tiktok.com/@handijojo?lang=fr" style="text-decoration: none">
+            <button id="handijojo-tiktok" class="handijojo-tiktok-button">
+                <img id="handijojo-logo-tiktok" class="company-logo" src="./img/tiktok-icon-free-png.webp"
                     alt="HandiJojo Logo" />
-                    <span id="span-handijojo-tiktok" class="donate-span">Clique Ici pour découvrir le tiktok</span>
-                </button>
-            </a>
-            <a href="https://www.facebook.com/people/HandiJojo/61559819096907/?mibextid=kFxxJD"
+                <span id="span-handijojo-tiktok" class="donate-span">Clique Ici pour découvrir le tiktok</span>
+            </button>
+        </a>
+        <a href="https://www.facebook.com/people/HandiJojo/61559819096907/?mibextid=kFxxJD"
             style="text-decoration: none">
             <button id="handijojo-facebook" class="handijojo-facebook-button">
                 <img id="handijojo-logo-facebook" class="company-logo" src="./img/Facebook_Logo_2023.png"
-                alt="HandiJojo Logo" />
+                    alt="HandiJojo Logo" />
                 <span id="span-handijojo-facebook" class="donate-span">Clique Ici pour découvrir la page</span>
             </button>
         </a>
     </div>
-    
+
     <section id="donate-section">
         <h1 class="main-title">Me soutenir</h1>
-        
+
         <div class="btn-grid" id="donate">
             <a href="https://hostinger.fr?REFERRALCODE=1NICOLAS267" style="text-decoration: none">
                 <button id="hostinger" class="hostinger-button">
@@ -253,36 +261,36 @@
                     <span id="span-hostinger" class="donate-span">Clique Ici pour recevoir 20% de réduction</span>
                 </button>
             </a>
-            
+
             <a href="https://www.ebuyclub.com/inscription?parrain=sarternicolas" style="text-decoration: none">
                 <button id="ebuyclub" class="ebuyclub-button">
                     <img id="ebuyclub-logo" class="company-logo" src="./img/ebuycub_logo.svg" alt="Ebuyclub Logo" />
                     <span id="span-ebuyclub" class="donate-span">Clique Ici pour recevoir 5€</span>
                 </button>
             </a>
-            
+
             <a href="joinhoney.com/ref/a0faysg" style="text-decoration: none">
                 <button id="honey" class="honey-button">
                     <img id="honey-logo" class="company-logo" src="./img/honey-logo.svg" alt="Honey Logo" />
                     <span id="span-honey" class="donate-span">Clique Ici pour recevoir 5€</span>
                 </button>
             </a>
-            
+
             <a href="https://www.moovance.fr/" style="text-decoration: none">
                 <button id="moovance" class="moovance-button">
                     <img id="moovance-logo" class="company-logo" src="./img/logo-moovance.png" alt="Moovance Logo" />
                     <span id="span-moovance" class="donate-span">Utilise le code sarte#17605 Pour gagner 6 mooves</span>
                 </button>
             </a>
-            
+
             <a href="https://dictanote.co/voicein/install/?r=646920" style="text-decoration: none">
                 <button id="dictanote" class="dictanote-button">
                     <img id="dictanote-logo" class="company-logo" src="./img/icon-voicein144.png"
-                    alt="Dictanote Logo" />
+                        alt="Dictanote Logo" />
                     <span id="span-dictanote" class="donate-span">Clique ici pour améliorer ta productivité</span>
                 </button>
             </a>
-            
+
             <a href="https://fr.tipeee.com/" style="text-decoration: none">
                 <button id="tipeee" class="tipeee-button">
                     <img id="tipeee-logo" class="company-logo" src="./img/tipeee-logo-white.svg" alt="Tipeee Logo" />
@@ -292,7 +300,7 @@
         </div>
     </section>
     <h1 class="main-title">Un site créé par </h1>
-    
+
     <div class="btn-grid" id="donate">
         <a href="https://nicodigitalsstudio.com/" style="text-decoration: none">
             <button id="babylon" class="babylon-button">
@@ -301,7 +309,7 @@
             </button>
         </a>
     </div>
-    
+
     <section class="sec-faq" id="no6">
         <h1 class="main-title" id="sc-title">Suivez moi sur :</h1>
         <div class="social-media">
@@ -318,7 +326,7 @@
             <a href="https://youtube.com" class="fab fa-youtube"></a> -->
         </div>
     </section>
-    
+
     <footer>
         <p>© 2025 Les Actus de Nico </p>
         <div class="links">
@@ -327,10 +335,10 @@
             <a href="https://nicodigitalsstudio.com/">Nico Digitals Studio | </a>
             <a href="./contact.html">Contact | </a>
             <a href="./plan_du_site.html">Plan du site</a>
-            
+
         </div>
     </footer>
-    
+
     <script src="./js/script.js"></script>
     <script async src="//www.instagram.com/embed.js"></script>
 </body>
