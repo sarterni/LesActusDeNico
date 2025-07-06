@@ -159,22 +159,19 @@
 
     <section id="instagram-posts" class="sec-faq">
         <h1 class="main-title">Mes derniers posts <span style="color:#E1306C;">Instagram</span></h1>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
             <?php
         $insta_lines = file('embed_instagram.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         for ($i = 0; $i < 4; $i++) {
             if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
                 $post_code = trim($insta_lines[$i]);
-                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" width="340" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="margin-bottom: 20px;"></iframe>';
+                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" width="340" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="flex: 1 1 340px; max-width: 48%; min-width: 280px; margin-bottom: 20px;"></iframe>';
             }
         }
         ?>
-
         </div>
 
         <!-- Script Instagram officiel -->
-        
         <p style="text-align:center; margin-top: 10px;">
             <a href="https://www.instagram.com/lesactusdenico/" target="_blank" rel="noopener">Voir tous mes posts sur
                 Instagram</a>
