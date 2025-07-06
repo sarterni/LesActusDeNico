@@ -166,8 +166,7 @@
         for ($i = 0; $i < 3; $i++) {
             if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
                 $post_code = trim($insta_lines[$i]);
-                // Display the Instagram post embed code
-echo '<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/' . $post_code . '/?img_index=1" data-instgrm-version="14" style="margin: 1px; max-width: 340px; min-width: 326px; padding: 0; width: calc(100% - 2px);"></blockquote>';
+                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" width="340" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="margin-bottom: 20px;"></iframe>';
             }
         }
         ?>
