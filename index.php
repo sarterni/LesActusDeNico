@@ -163,7 +163,7 @@
 
             <?php
         $insta_lines = file('embed_instagram.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 4; $i++) {
             if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
                 $post_code = trim($insta_lines[$i]);
                 echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" width="340" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="margin-bottom: 20px;"></iframe>';
