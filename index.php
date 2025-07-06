@@ -165,7 +165,7 @@
         for ($i = 0; $i < 4; $i++) {
             if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
                 $post_code = trim($insta_lines[$i]);
-                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" width="340" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="flex: 1 1 340px; max-width: 48%; min-width: 280px; margin-bottom: 20px;"></iframe>';
+                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="width:48%; max-width:340px; min-width:280px; margin-bottom:20px; flex:1 1 48%;"></iframe>';
             }
         }
         ?>
