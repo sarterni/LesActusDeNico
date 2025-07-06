@@ -159,17 +159,24 @@
 
     <section id="instagram-posts" class="sec-faq">
         <h1 class="main-title">Mes derniers posts <span style="color:#E1306C;">Instagram</span></h1>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
             <?php
-        $insta_lines = file('embed_instagram.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        for ($i = 0; $i < 4; $i++) {
-            if (isset($insta_lines[$i]) && !empty(trim($insta_lines[$i]))) {
-                $post_code = trim($insta_lines[$i]);
-                echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="width:48%; max-width:340px; min-width:280px; margin-bottom:20px; flex:1 1 48%;"></iframe>';
+            $insta_lines = file('embed_instagram.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            $count = count($insta_lines);
+            for ($i = 0; $i < $count; $i += 2) {
+                echo '<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; width: 100%;">';
+                for ($j = 0; $j < 2; $j++) {
+                    $idx = $i + $j;
+                    if (isset($insta_lines[$idx]) && !empty(trim($insta_lines[$idx]))) {
+                        $post_code = trim($insta_lines[$idx]);
+                        echo '<iframe src="https://www.instagram.com/p/' . $post_code . '/embed" height="440" frameborder="0" scrolling="no" allowtransparency="true" style="width:48%; max-width:340px; min-width:280px; margin-bottom:20px; flex:1 1 48%;"></iframe>';
+                    }
+                }
+                echo '</div>';
             }
-        }
-        ?>
+            ?>
         </div>
+    </section>
 
         <!-- Script Instagram officiel -->
         <p style="text-align:center; margin-top: 10px;">
